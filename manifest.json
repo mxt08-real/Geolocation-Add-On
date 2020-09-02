@@ -1,0 +1,19 @@
+{
+"manifest_version": 2,
+"name": "Geolocation Add-On",
+"version": "4.0",
+"description": "Make a dialog with your coordenates when you start a web",
+"icons": {
+    "128": "icon.png" },
+"permissions": [
+    "geolocation" ],
+    "content_scripts": [ {
+       "matches": [ "*://*/*" ],
+       "js": [ "main.js" ] } ],
+"browser_action": {
+"default_icon": {
+"128": "icon.png" },
+"default_title": "Geolocation Add-On",
+"default_popup": "popup.html" }
+}
+    
